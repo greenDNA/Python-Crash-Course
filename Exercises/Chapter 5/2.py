@@ -1,0 +1,8 @@
+print('so' == 'SO'.lower())
+print('so' == 'So')
+print(5 > 6)
+print(5 > 10 and 4 < 9)
+print(2 > 6 or 'cat' == 'CAT'.lower())
+group = list(range(1,11))
+print(5 in group)
+print(22 not in group)
