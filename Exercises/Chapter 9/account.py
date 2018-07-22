@@ -11,20 +11,12 @@ class User:
 class Admin(User):
     def __init__(self, first, last, age):
         super().__init__(first, last, age)
-        self.privileges = ['can cook']
+        self.privileges = Privileges('text message')
+
+class Privileges:
+    def __init__(self, privilege):
+        self.privileges = [privilege]
 
     def show_privileges(self):
         for privilege in self.privileges:
             print(privilege)
-
-user1 = Admin('donald', 'glover', 22)
-user2 = User('pikachu', 'ketchum', 1992)
-user3 = User('sonic', 'hedghog', 1982)
-
-user1.describe_user()
-user1.greet_user()
-user1.show_privileges()
-user2.describe_user()
-user2.greet_user()
-user3.describe_user()
-user3.greet_user()
