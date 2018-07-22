@@ -1,0 +1,4 @@
+In Python You can strip
+In Python YOu can loop
+In Python You can import
+In Python You can slice
